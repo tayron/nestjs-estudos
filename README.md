@@ -1,3 +1,4 @@
+# NestJS estudos
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
@@ -45,6 +46,12 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Creating a CRUD
+For quickly creating a CRUD controller with the validation built-in, you may use the CLI's CRUD generator:
+
+```bash
+nest g resource [name]
+```
 ## Test
 
 ```bash

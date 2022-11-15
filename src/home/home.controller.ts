@@ -1,11 +1,11 @@
 import { Controller, Get } from '@nestjs/common';
 import { ProposalService } from 'src/proposal/proposal.service';
-import { AppService } from './app.service';
+import { HomeService } from './home.service';
 
 @Controller()
-export class AppController {
+export class HomeController {
   constructor(
-    private readonly appService: AppService,
+    private readonly appService: HomeService,
     private readonly s3Service: ProposalService,
   ) {}
 
