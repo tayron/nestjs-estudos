@@ -1,13 +1,8 @@
 import { Module } from '@nestjs/common';
-import { CatsController } from 'src/cats/cats.controller';
-import { CatsService } from 'src/cats/cats.service';
-import { S3 } from 'src/helper/s3';
-import { ProposalService } from 'src/proposal/proposal.service';
-import { HomeController } from './home/home.controller';
-import { HomeService } from './home/home.service';
+import { CatsModule } from './cats/cats.module';
+import { HomeModule } from './home/home.module';
 
 @Module({
-  providers: [HomeService, ProposalService, S3, CatsService],
-  controllers: [HomeController, CatsController],
+  imports: [HomeModule, CatsModule],
 })
 export class MainModule {}
